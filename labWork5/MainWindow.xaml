@@ -5,8 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:labWork5"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Контакты" Height="450" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <ListBox SelectionChanged="Contactslist_SelectionChanged" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Grid.RowSpan="9" Name="ContactsList"/>
+        <TextBlock Grid.Column="2" Grid.Row="0" Grid.ColumnSpan="2" FontSize="24" VerticalAlignment="Bottom" Margin="0 0 0 5">Имя</TextBlock>
+        <TextBox Name="NameField"  Grid.Column="2" Grid.Row="1" Grid.ColumnSpan="2" FontSize="24"/>
+        <TextBlock Grid.Column="2" Grid.Row="2" Grid.ColumnSpan="2" FontSize="24" VerticalAlignment="Bottom" Margin="0 0 0 5">Фамилия</TextBlock>
+        <TextBox Name="LastnameField" Grid.Column="2" Grid.Row="3" Grid.ColumnSpan="2" FontSize="24"/>
+        <TextBlock Grid.Column="2" Grid.Row="4" Grid.ColumnSpan="2" FontSize="24" VerticalAlignment="Bottom" Margin="0 0 0 5">Телефон</TextBlock>
+        <TextBox Name="PhoneField" Grid.Column="2" Grid.Row="5" Grid.ColumnSpan="2" FontSize="24"/>
+        <TextBlock Grid.Column="2" Grid.Row="6" Grid.ColumnSpan="2" FontSize="24" VerticalAlignment="Bottom" Margin="0 0 0 5">E-mail</TextBlock>
+        <TextBox Name="EmailField" Grid.Column="2" Grid.Row="7" Grid.ColumnSpan="2" FontSize="24"/>
+        <Button Name="AddButton" Click="AddButton_Click" Grid.Column="2" Grid.Row="8" FontSize="15">Добавить контакт</Button>
+        <Button Name="SaveButton" Click="SaveButton_Click" Grid.Column="3" Grid.Row="8" FontSize="15">Сохранить изменения</Button>
 
     </Grid>
 </Window>
