@@ -1,0 +1,9 @@
+bin
+obj
+.vs
+labWork5.sln
+packages
+*.db
+*.json
+*.xml
+*.sln
